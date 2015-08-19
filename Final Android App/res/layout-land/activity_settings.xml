@@ -1,0 +1,306 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/photoshop"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/txvHeader_Settings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="393dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="FromCartoonBlocks"
+            android:text="Settings"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#ffffff"
+            android:textSize="38sp" />
+
+        <ImageView
+            android:id="@+id/imgBattery"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/battery_full" />
+
+        <TextView
+            android:id="@+id/txvBatteryLevel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="12dp"
+            android:layout_toRightOf="@+id/imgBattery"
+            android:textColor="@color/White" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/txvSubHeader_Settings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="5dp"
+            android:text="In this section you can modify the name,the volume and the IP of the robot"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#ffffff"
+            android:textSize="15sp"
+            android:textStyle="italic" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:layout_marginBottom="40dp" >
+
+        <EditText
+            android:id="@+id/txvChangeName_Settings"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/change_name_bt"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="120dp"
+            android:ems="15"
+            android:text="Enter a new name"
+            android:textColor="#ffffff"
+            android:textStyle="italic" />
+
+        <Button
+            android:id="@+id/btChangeName_Settings"
+            style="@style/CustomButtonText"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="190dp"
+            android:background="@drawable/buttons_custom_background_style"
+            android:text="Change Name" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:layout_marginBottom="40dp" >
+
+        <EditText
+            android:id="@+id/txvChangeIP_Settings"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="120dp"
+            android:ems="15"
+            android:text="Enter an IP address"
+            android:textColor="#ffffff"
+            android:textStyle="italic" />
+
+        <Button
+            android:id="@+id/btChangeIP_Settings"
+            style="@style/CustomButtonText"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="153dp"
+            android:layout_toRightOf="@+id/txvChangeIP_Settings"
+            android:background="@drawable/buttons_custom_background_style"
+            android:text="Change IP " />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginBottom="40dp" >
+
+        <SeekBar
+            android:id="@+id/barSoundModify_Settings"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="40dp"
+            android:layout_toLeftOf="@+id/txvSound_High_Perc" />
+
+        <TextView
+            android:id="@+id/txvSound_Low_Perc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="39dp"
+            android:layout_toLeftOf="@+id/barSoundModify_Settings"
+            android:text="0%"
+            android:textColor="#ffffff"
+            android:textSize="19sp" />
+
+        <TextView
+            android:id="@+id/txvSound_High_Perc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/barSoundModify_Settings"
+            android:layout_centerHorizontal="true"
+            android:text="100%"
+            android:textColor="#ffffff"
+            android:textSize="19sp" />
+
+        <Button
+            android:id="@+id/btTestSound_Settings"
+            style="@style/CustomButtonText"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="70dp"
+            android:layout_toRightOf="@+id/txvSound_High_Perc"
+            android:background="@drawable/buttons_custom_background_style"
+            android:text="Test sound" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/txvCurrentSet_Settings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="Current Status : "
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/txvRobotName_Settings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:text="Robot Name :"
+            android:textColor="#ffffff"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/txvRobotName_val"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="TextView"
+            android:textColor="@color/Blue"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txvIP_Settings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:text="IP Address:"
+            android:textColor="#ffffff"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/txvIP_val"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="TextView"
+            android:textColor="@color/Green"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txvSound_Settings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:text="Sound Volume"
+            android:textColor="#ffffff"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/txvSound_val"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="TextView"
+            android:textColor="@color/Blue"
+            android:textSize="17sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:weightSum="6" >
+
+        <ImageButton
+            android:id="@+id/imgbtHome_Settings"
+            android:layout_width="130dp"
+            android:layout_height="60dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/buttons_custom_background_style"
+            android:src="@drawable/home" />
+
+        <Button
+            android:id="@+id/btMotion_Settings"
+            android:layout_width="130dp"
+            android:layout_height="60dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/buttons_custom_background_style"
+            android:text="Motion" />
+
+        <Button
+            android:id="@+id/btBattery_Settings"
+            android:layout_width="130dp"
+            android:layout_height="60dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/buttons_custom_background_style"
+            android:text="Battery" />
+        
+        <Button
+            android:id="@+id/btSpeechRec_Settings"
+            android:layout_width="130dp"
+            android:layout_height="60dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/buttons_custom_background_style"
+            android:text="Speech Rec" />
+
+        <Button
+            android:id="@+id/btSpeech_Settings"
+            android:layout_width="130dp"
+            android:layout_height="60dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/buttons_custom_background_style"
+            android:text="Speech" />
+
+        <Button
+            android:id="@+id/btDemos_Settings"
+            android:layout_width="130dp"
+            android:layout_height="60dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/buttons_custom_background_style"
+            android:text="Demos" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">NaoWorld</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_motion">MotionActivity</string>
+    <string name="title_activity_speech">SpeechActivity</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+    <string name="title_activity_under_constr">UnderConstrActivity</string>
+    <string name="title_activity_under_construction">UnderConstructionActivity</string>
+    
+</resources>
+
+

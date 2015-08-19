@@ -1,0 +1,189 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/photoshop"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp" >
+
+        <ImageView
+            android:id="@+id/imgBattery"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/battery_full" />
+
+        <TextView
+            android:id="@+id/txvBatteryLevel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imgBattery"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/imgBattery"
+            android:textColor="@color/White" />
+
+        <TextView
+            android:id="@+id/txvHeader_Speech"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="Speech"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#ffffff"
+            android:textSize="38sp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="70dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/txvSubHeader_Speech"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:text="In this section you can make NAO speak through custom ot predefined phrases"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:textStyle="italic" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp" >
+
+        <Button
+            android:id="@+id/btAddPhrase"
+            style="@style/CustomButtonText"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/btSpeak_Speech"
+            android:layout_alignBottom="@+id/btSpeak_Speech"
+            android:layout_alignRight="@+id/etxManualPhrase"
+            android:layout_marginRight="26dp"
+            android:background="@drawable/buttons_custom_background_style"
+            android:text="Add Phrase" />
+
+        <Button
+            android:id="@+id/btSpeak_Speech"
+            style="@style/CustomButtonText"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/etxManualPhrase"
+            android:layout_below="@+id/etxManualPhrase"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/buttons_custom_background_style"
+            android:text="Speak" />
+
+        <EditText
+            android:id="@+id/etxManualPhrase"
+            android:layout_width="430dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="31dp"
+            android:ems="10"
+            android:text="  Please enter your text here..."
+            android:textColor="#ffffff"
+            android:textStyle="italic" >
+
+            <requestFocus />
+        </EditText>
+
+        <ListView
+            android:id="@+id/lstPhrases_Speech"
+            android:layout_width="400dp"
+            android:layout_height="238dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="49dp"
+            android:layout_toRightOf="@+id/btAddPhrase"
+            android:background="@drawable/list_border" >
+        </ListView>
+
+        <Button
+            android:id="@+id/btClearList"
+            style="@style/CustomButtonText"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/lstPhrases_Speech"
+            android:layout_alignRight="@+id/btAddPhrase"
+            android:layout_marginBottom="13dp"
+            android:layout_marginRight="113dp"
+            android:background="@drawable/buttons_custom_background_style"
+            android:text="Clear List" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:weightSum="6" >
+
+        <ImageButton
+            android:id="@+id/imgbtHome_Speech"
+            android:layout_width="130dp"
+            android:layout_height="60dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/buttons_custom_background_style"
+            android:src="@drawable/home" />
+
+        <Button
+            android:id="@+id/btMotion_Speech"
+            android:layout_width="130dp"
+            android:layout_height="60dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/buttons_custom_background_style"
+            android:text="Motion" />
+
+        <Button
+            android:id="@+id/btBattery_Speech"
+            android:layout_width="130dp"
+            android:layout_height="60dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/buttons_custom_background_style"
+            android:text="Battery" />
+
+        <Button
+            android:id="@+id/btSettings_Speech"
+            android:layout_width="130dp"
+            android:layout_height="60dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/buttons_custom_background_style"
+            android:text="Settings" />
+
+        <Button
+            android:id="@+id/btSpeechRec_Speech"
+            android:layout_width="130dp"
+            android:layout_height="60dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/buttons_custom_background_style"
+            android:text="Speech Rec" />
+
+        <Button
+            android:id="@+id/btDemos_Speech"
+            android:layout_width="130dp"
+            android:layout_height="60dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/buttons_custom_background_style"
+            android:text="Demos" />
+    </LinearLayout>
+
+</LinearLayout>

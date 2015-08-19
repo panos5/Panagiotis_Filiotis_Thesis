@@ -1,0 +1,145 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/photoshop"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp" >
+
+        <TextView
+            android:id="@+id/txvMainTitle_LogIn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:text="Nao World"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#FFFFFF"
+            android:textSize="36sp" />
+
+        <ImageView
+            android:id="@+id/imgBattery"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/battery_full" />
+
+        <TextView
+            android:id="@+id/txvBatteryLevel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/imgBattery"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="11dp"
+            android:textColor="@color/White" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="111dp" >
+
+        <Button
+            android:id="@+id/btSpeech_LogIn"
+            style="@style/CustomButtonText"
+            android:layout_width="130dp"
+            android:layout_height="65dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/buttons_custom_background_style"
+            android:text="Speech" />
+
+        <Button
+            android:id="@+id/btSpeechRec_LogIn"
+            style="@style/CustomButtonText"
+            android:layout_width="130dp"
+            android:layout_height="65dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/buttons_custom_background_style"
+            android:height="90dp"
+            android:text="Speech Recognition" />
+
+        <Button
+            android:id="@+id/btMotion_LogIn"
+            style="@style/CustomButtonText"
+            android:layout_width="130dp"
+            android:layout_height="65dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/buttons_custom_background_style"
+            android:text="Motion" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="447dp"
+        android:layout_marginBottom="30dp" >
+
+        <ImageView
+            android:id="@+id/imgRobots_LogIn"
+            android:layout_width="469dp"
+            android:layout_height="383dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="0.27"
+            android:paddingBottom="20dp"
+            android:paddingTop="20dp"
+            android:src="@drawable/nao_robots" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_weight="0.01" >
+
+        <Button
+            android:id="@+id/btDemos_LogIn"
+            style="@style/CustomButtonText"
+            android:layout_width="130dp"
+            android:layout_height="65dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/buttons_custom_background_style"
+            android:text="Demos" />
+
+        <Button
+            android:id="@+id/btBattery_LogIn"
+            style="@style/CustomButtonText"
+            android:layout_width="130dp"
+            android:layout_height="65dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/buttons_custom_background_style"
+            android:text="Battery"
+            android:typeface="normal" />
+
+        <Button
+            android:id="@+id/btSettings_LogIn"
+            style="@style/CustomButtonText"
+            android:layout_width="130dp"
+            android:layout_height="65dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/buttons_custom_background_style"
+            android:text="Settings" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+</LinearLayout>

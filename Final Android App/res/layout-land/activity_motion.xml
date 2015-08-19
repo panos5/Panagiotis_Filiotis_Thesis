@@ -1,0 +1,225 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/photoshop"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/imgBattery"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="17dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/battery_full" />
+
+        <TextView
+            android:id="@+id/txvHeader_Motion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="30dp"
+            android:fontFamily="FromCartoonBlocks"
+            android:text="Motion"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#ffffff"
+            android:textSize="38sp" />
+
+        <TextView
+            android:id="@+id/txvBatteryLevel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/imgBattery"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="12dp"
+            android:layout_toRightOf="@+id/imgBattery"
+            android:textColor="@color/White" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/txvSubHeader_Motion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="In this section you can make NAO move according to the buttons"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:textStyle="italic" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="268dp"
+        android:layout_marginBottom="60dp" >
+
+        <RelativeLayout
+            android:layout_width="358dp"
+            android:layout_height="212dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="80dp"
+            android:layout_marginTop="40dp" >
+
+            <ImageButton
+                android:id="@+id/btDown_Motion"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/btRight_Motion"
+                android:layout_toLeftOf="@+id/btRight_Motion"
+                android:background="@null"
+                android:scaleType="fitXY"
+                android:src="@drawable/button_down_effect" />
+
+            <ImageButton
+                android:id="@+id/btUp_Motion"
+                android:layout_width="70dp"
+                android:layout_height="60dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="196dp"
+                android:background="@drawable/button_up_effect"
+                android:scaleType="fitXY"
+                android:src="@drawable/up_arrow" />
+
+            <ImageButton
+                android:id="@+id/btLeft_Motion"
+                android:layout_width="70dp"
+                android:layout_height="60dp"
+                android:layout_above="@+id/btDown_Motion"
+                android:layout_toLeftOf="@+id/btDown_Motion"
+                android:background="@null"
+                android:scaleType="fitXY"
+                android:src="@drawable/button_left_effect" />
+
+            <ImageButton
+                android:id="@+id/btRight_Motion"
+                android:layout_width="70dp"
+                android:layout_height="60dp"
+                android:layout_below="@+id/btUp_Motion"
+                android:layout_toRightOf="@+id/btUp_Motion"
+                android:background="@null"
+                android:scaleType="fitXY"
+                android:src="@drawable/button_right_effect" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="331dp"
+            android:layout_height="292dp"
+            android:layout_marginTop="50dp" >
+
+            <Button
+                android:id="@+id/btTurnLeft_Motion"
+                style="@style/CustomButtonText"
+                android:layout_width="130dp"
+                android:layout_height="60dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="39dp"
+                android:background="@drawable/buttons_custom_background_style"
+                android:text="Turn left" />
+
+            <Button
+                android:id="@+id/btSitDown_Motion"
+                style="@style/CustomButtonText"
+                android:layout_width="130dp"
+                android:layout_height="60dp"
+                android:layout_alignLeft="@+id/btTurnLeft_Motion"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/buttons_custom_background_style"
+                android:text="Sit down" />
+
+            <Button
+                android:id="@+id/btStandUp_Motion"
+                style="@style/CustomButtonText"
+                android:layout_width="130dp"
+                android:layout_height="60dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="30dp"
+                android:layout_toLeftOf="@+id/btSitDown_Motion"
+                android:background="@drawable/buttons_custom_background_style"
+                android:text="Stand Up" />
+
+            <Button
+                android:id="@+id/btTurnRight_Motion"
+                style="@style/CustomButtonText"
+                android:layout_width="130dp"
+                android:layout_height="60dp"
+                android:layout_alignBaseline="@+id/btTurnLeft_Motion"
+                android:layout_alignBottom="@+id/btTurnLeft_Motion"
+                android:layout_alignLeft="@+id/btStandUp_Motion"
+                android:background="@drawable/buttons_custom_background_style"
+                android:text="Turn Right" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:weightSum="6" >
+
+        <ImageButton
+            android:id="@+id/imgbtHome_Motion"
+            android:layout_width="130dp"
+            android:layout_height="60dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/buttons_custom_background_style"
+            android:src="@drawable/home" />
+
+        <Button
+            android:id="@+id/btSpeech_Motion"
+            android:layout_width="130dp"
+            android:layout_height="60dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/buttons_custom_background_style"
+            android:text="Speech" />
+
+        <Button
+            android:id="@+id/btBattery_Motion"
+            android:layout_width="130dp"
+            android:layout_height="60dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/buttons_custom_background_style"
+            android:text="Battery" />
+
+        <Button
+            android:id="@+id/btSettings_Motion"
+            android:layout_width="130dp"
+            android:layout_height="60dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/buttons_custom_background_style"
+            android:text="Settings" />
+
+        <Button
+            android:id="@+id/btSpeechRec_Motion"
+            android:layout_width="130dp"
+            android:layout_height="60dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/buttons_custom_background_style"
+            android:text="Speech Rec" />
+
+        <Button
+            android:id="@+id/btDemos_Motion"
+            android:layout_width="130dp"
+            android:layout_height="60dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/buttons_custom_background_style"
+            android:text="Demos" />
+
+    </LinearLayout>
+
+</LinearLayout>

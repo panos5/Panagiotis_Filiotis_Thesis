@@ -1,0 +1,11 @@
+In the area of swarm robotics we are investigating how a swarm of robots can be deployed underwater and autonomously create a communication network. This project is a collaboration with Glasgow University. Moreover, the use of different robot platforms for emergency situations is researched by other lab members.
+
+We have another collaboration with researchers from the University of Sao Paulo and the University of Bern, which investigates the use of unmanned aerial vehicles in combination with a wireless sensor network for agricultural application.
+
+Together with a research group in Brazil, we are developing a robotics hand in order to help patients suffering from the effects of a stroke. With this rehabilitation device the patients are assisted when relearning movements such as opening and closing the hand. The patients will also be able to use an EEG device to control the robotic hand with their thoughts.
+
+Another research area of our lab is learning and memory for robot companions. This area also includes the modelling of emotions and their influence on behaviour.
+
+Our lab members can give more information about these projects
+
+

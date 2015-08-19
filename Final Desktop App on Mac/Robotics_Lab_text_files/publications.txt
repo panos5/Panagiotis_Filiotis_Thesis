@@ -1,0 +1,13 @@
+Instead of listing our publications, I will briefly speak about past research projects.
+
+Members of the Robotics Lab were involved in the EU FP7 project LIREC (Living with Robots and Interactive Companions). This project investigated the long-term use of robot companions in different scenarios, e.g. in an office or at home.
+
+We also had many undergraduate and postgraduate students working with our robots.
+
+For example, the NAO robot served as a helper for visually impaired people to navigate around a room. The robot would detect if there are any obstacles and they acoustically inform about the position of these obstacles.
+
+Our e-puck robots were trained to play robot soccer. Following different strategies, two teams of e-pucks played a 3-a-side match against each other.
+
+Our ARDrones were used in a project on non-verbal communication. Similar to the waggle dance of bees, a drone was flying a spatial pattern, e.g. a circular or a triangular pattern. Another drone could see this pattern and was able to interpret it. This form of communication is helpful if other communication types like WiFi are not available.
+
+If you are interested in details, please ask our lab members.

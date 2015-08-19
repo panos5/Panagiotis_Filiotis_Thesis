@@ -1,0 +1,8 @@
+In our lab we have four humanoid NAO robots, twenty small e-pucks and three flying
+ARDrones.
+
+There are also Nikita and Sarah. 
+
+Nikita is an iCub robotic head and Sarah is a human-size robot with an EMYS turtle head.
+
+We also have Pleo, an emotion-sensitive dinosaur robot, and AIBO, the robot dog.

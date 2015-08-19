@@ -1,0 +1,4 @@
+Disconnected
+NAO
+80
+20 %
